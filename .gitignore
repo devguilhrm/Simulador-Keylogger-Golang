@@ -1,0 +1,31 @@
+# Go build artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Project binaries
+lab_keylogger_simulado
+lab_keylogger_simulado.exe
+sim
+sim.exe
+
+# Runtime logs / local generated data
+capturas_simuladas.txt
+*.log
+
+# Coverage
+coverage.out
+
+# Local environment files
+.env
+.env.*
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
