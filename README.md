@@ -10,21 +10,12 @@ Lab educacional e controlado para demonstrar o ciclo basico de um keylogger sem 
 - Envio por e-mail fica desativado por padrao e precisa de `--email` mais variaveis `SIM_SMTP_*`.
 - Use apenas em ambiente autorizado e com dados ficticios.
 
-## O que faltava no lab original
-
-- Credenciais SMTP estavam hardcoded no codigo Python.
-- O README estava com encoding quebrado.
-- O envio automatico iniciava sempre, mesmo sem configuracao real.
-- Faltava uma versao compilavel/portavel sem dependencia do Python.
-- O arquivo de evidencias parecia conter dados sensiveis de teste; prefira exemplos sanitizados.
-
 ## Arquivos principais
 
 | Arquivo | Funcao |
 | --- | --- |
 | `main.go` | Loop principal, log, comandos e envio SMTP opt-in |
 | `console_reader.go` | Leitura raw do terminal local |
-| `simulated_keylogger_console.py` | Versao Python original mantida como referencia |
 | `capturas_simuladas.txt` | Log gerado em runtime |
 
 ## Como executar
@@ -84,4 +75,4 @@ Este lab ajuda a discutir controles defensivos contra keyloggers reais:
 - EDR/antivirus com deteccao comportamental.
 - Controle de saida SMTP/HTTP/DNS incomum.
 - MFA para reduzir impacto de roubo de senha.
-- Treinamento para evitar execucao de anexos e scripts nao confiaveis.
+- Treinamento para evitar execução de anexos e scripts nao confiaveis.
